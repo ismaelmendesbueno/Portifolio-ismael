@@ -1,0 +1,336 @@
+:root {
+    --first-color: #202020;
+    --second-color: #181818;;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu  {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--first-color);
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    z-index: 999;
+
+    width: 100%;
+    
+    position: fixed;
+}
+
+.menu ul {
+    background-color: var(--first-color);
+    list-style: none;
+   
+}
+
+.menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.menu ul li a {
+    display: inline-block;
+    background-color: var(--first-color);
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    font: bold;
+
+  
+
+}
+
+.menu ul li:hover::after{
+    transition: .7s ease-in-out;
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 40px;
+    height:2px;
+    background:#6610f2;
+    
+}
+
+.cabeçalho {
+    background-color: var(--second-color);
+    height: 44.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+    
+.image-bot img {
+    width: 40%;
+    position: absolute;
+    right: 0;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    color: white;
+    font-size: 30px;
+    
+    margin-right: 40%;
+
+    
+    
+}
+
+.infos h1 {
+    font: bold;
+    font-size: 50px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    background-color: #6610f2;
+
+    height: 65px;
+
+    margin-top: 30px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+    
+}
+
+.botao:hover {
+    transition: .3s ease-out;
+    background-color: rgb(61, 9, 145);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 80%)
+}
+
+.botao img {
+    width: 35px;
+    
+}
+
+.botao a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.sobre-mim {
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.sobre-mim img {
+    width: 50%;
+}
+
+.sobre {
+    color: white;
+    text-decoration: none;
+    margin-right: 10em;
+}
+
+.sobre h1 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.sobre p {
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.botao-one {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    width: 10em;
+
+    padding: 10px;
+
+    background-color: #6610f2;
+
+    margin-top: 1em;
+
+    border-radius: 5px;
+
+}
+
+.botao-one:hover{
+    cursor: pointer;
+    transition: .3s ease-out;
+    background-color: rgb(61, 9, 145);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 80%)
+}
+
+.botao-one a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+.botao-one img {
+    
+    width: 30px;
+}
+
+.projetos {
+    height: 100vh;
+    background-color: var(--second-color);
+   
+    line-height: 1;
+}
+
+.projetos h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 100px 0 100px;
+
+    
+}
+
+.box {
+    background-color: var(--first-color);
+    height: 100%;
+    padding: 40px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s ease-in-out;
+}
+.box h1 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.box p {
+    color: gray;
+    font: 10px;
+    padding-bottom: 10px;
+}
+
+
+.box img {
+    width: 30vh;
+}
+
+.box:hover {
+    transition: .6s ease;
+    background-color: #313030;
+
+}
+
+
+.view {
+    box-shadow: 0 8px 16px rgb(0 0 0 / 80%)
+}
+
+.menumb {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px 0 20px;
+    
+    height: 80px;
+
+    background-color: var(--first-color);
+
+    font-size: 30px;
+
+    color: white;
+
+    z-index: 99999;
+}
+
+.hide {
+    display: none;
+    
+    transform: translateX(200%);
+    transition: all .2s;
+    
+}
+
+#img {
+    cursor: pointer;
+}
+
+.show {
+    display: flex;
+    
+    justify-content: left;
+
+    position: absolute;
+    right: 0;
+    top: 80px;
+
+    width: 50%;
+    height: 20vh;
+    background-color: var(--first-color);
+
+    z-index: 9999;
+
+    color: white;
+
+    border-top: 5px solid black;
+
+    border-radius: 5px;
+
+    transform: translateX(0);
+
+}
+
+.show ul li {
+    padding-bottom: 40px;
+    
+}
+
+.show ul li a {
+    font-size: 30px;
+    text-decoration: none;
+
+    color: white;
+
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--second-color);
+    
+    color: white;
+    
+    text-align: center;
+}
