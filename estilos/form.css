@@ -133,3 +133,8 @@ main button:hover {
 .toggle {
     display: none;
 }
+
+.dev {
+    font-size: 40px;
+    color: white;
+}

@@ -277,11 +277,16 @@ body {
 }
 
 .hide {
-    display: none;
-    
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
     transform: translateX(200%);
     transition: all .2s;
-    
+    position: absolute;
+    top: 3em;
+    left: 20em;
+    right: 0;
+    bottom: 0;
 }
 
 #img {
@@ -294,20 +299,17 @@ body {
     justify-content: left;
 
     position: absolute;
-    right: 0;
     top: 80px;
+    left: 6em;
 
-    width: 50%;
-    height: 20vh;
+    max-width: 60%;
+    max-height: 30vh;
     background-color: var(--first-color);
 
     z-index: 9999;
 
     color: white;
 
-    border-top: 5px solid black;
-
-    border-radius: 5px;
 
     transform: translateX(0);
 
