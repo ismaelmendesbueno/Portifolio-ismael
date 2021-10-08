@@ -33,13 +33,27 @@
         margin-bottom: 20px;
     }
 
-
     .botao-one {
         width: 7em;
     }
 
     .cabeçalho {
         height: 40em;
+    }
+
+    .conhecimento {
+        height: 130vh;
+    }
+
+    .skils {
+        flex-direction: column;
+    }
+
+    .front {
+        width: 15em;
+        height: 15em;
+
+        margin-bottom: 20px;
     }
 }
 
