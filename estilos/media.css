@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1000px) {
+    .front {
+        width: 15em;
+        height: 19em;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .menu {
         display: none;
@@ -42,7 +49,7 @@
     }
 
     .conhecimento {
-        height: 130vh;
+        height: 145vh;
     }
 
     .skils {
