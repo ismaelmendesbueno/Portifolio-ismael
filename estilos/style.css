@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .menu  {
@@ -195,9 +196,10 @@ body {
 
 .projetos {
     height: 100vh;
-    background-color: var(--second-color);
+    background-color: var(--first-color);
    
     line-height: 1;
+
 }
 
 .projetos h2 {
@@ -208,7 +210,9 @@ body {
     text-align: center;
 
     color: white;
+
 }
+
 
 .boxes {
     display: flex;
@@ -220,11 +224,11 @@ body {
 }
 
 .box {
-    background-color: var(--first-color);
+    background-color: var(--second-color);
     height: 100%;
     padding: 40px;
 
-    border-radius: 10px;
+    border-radius: 5px;
 
     cursor: pointer;
 
@@ -329,10 +333,75 @@ body {
     padding: 10px;
 }
 
-footer {
+.direitos {
     background-color: var(--second-color);
     
     color: white;
     
     text-align: center;
 }
+
+.conhecimento {
+    background-color: var(--second-color);
+    height: 80vh;
+
+}
+
+.conhecimento h1 {
+    text-align: center;
+    color: white;
+
+    padding-top: 50px;
+
+    font-size: 40px;
+
+}
+
+.skils {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    margin-top: 40px;
+
+     
+}
+
+.front {
+    background-color: var(--first-color);
+    width: 20em;
+    height: 25em;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 80%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+.front h2 {
+    font-size: 30px;
+
+    margin-bottom: 20px ;
+
+    color: white;
+}
+
+.front p {
+    font-size: 20px;
+    color: white;
+}
+
+.front:hover {
+    background-color: #363535;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 90%);
+    transition: .3s ease-in;
+}
+
+
+

@@ -30,9 +30,6 @@ header div a {
     color: white;
     position: relative;
 }
-header div a:hover {
-    color: rgb(190, 179, 179);
-}
 
 header div a:hover::after {
     transition: .10s ease-in-out;
