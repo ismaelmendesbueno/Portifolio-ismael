@@ -48,7 +48,9 @@
             <div class="infos"> 
                 <h3>Ola, eu sou o </h3>
                 <H1>Ismael Mendes</H1>
-                <h3>Desenvolvedor Front-End.</h3>
+                <div style="display: flex; padding: 0;">
+                    <h3 class="escrever"></h3>
+                </div>
                 <div class="botao">
                     <img src="./images/instagram_ig_logo_icon_134013.png" alt="">
                     <a href="https://www.instagram.com/wtf__ismael/">Instagram</a>
@@ -134,6 +136,14 @@
         </footer>
    </main>
    <script src="./scripts/toggle.js"></script>
-   <script src="./scripts/hover.js"></script>
+   <script src="./scripts/hover.js"></script>´
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+   <script>
+    var typed = new Typed('.escrever', {
+        strings: ["Desenvovedor Front-End.", "Desenvovedor Front-End."],
+        typeSpeed: 50,
+        backSpeed: 100
+    });    
+</script>
 </body>
 </html>
