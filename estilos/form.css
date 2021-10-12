@@ -1,11 +1,14 @@
 body {
     background-color: #202020;
     font-family: 'Poppins', sans-serif;
+    
 }
 main {
     display: flex;
     flex-direction: column;
     padding: 10em;
+
+    height: 50vh;
 }
 
 header {
