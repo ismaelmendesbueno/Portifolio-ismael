@@ -403,5 +403,18 @@ body {
     transition: .3s ease-in;
 }
 
+.showHide {
+    display: none;
+
+    
+}
+
+.showHideOn{
+    display: flex;
+    flex-direction: column;
+
+    transition: .3s ease-in;
+    transform-origin: right;
+}
 
 
